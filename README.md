@@ -56,3 +56,28 @@ localhost:8000
 * Django 5
 * Django Template _intentionally avoiding using any 'big' javascript framework in order to use Django Templating system_
 * MySQL 8
+
+Projects
+---------------
+
+### Plugin - Django Library and cool Projects
+
+* [Datta Able Django](https://github.com/app-generator/django-datta-able)
+* [Django Material Dashboard](https://github.com/app-generator/django-material-dashboard)
+
+
+### Other Django Examples
+
+_Here a list of some example I found in github and online_
+
+* [django-realworld-example-app](https://github.com/gothinkster/django-realworld-example-app/tree/master)
+* [My django project](https://github.com/mach1el/my-django)
+* [E-Commerce Project For Baby Tools](https://github.com/MET-DEV/Django-E-Commerce)
+* [example.django.mi_aplicacion](https://github.com/macagua/example.django.mi_aplicacion)
+* [django-blog-example](https://github.com/rgab1508/django-blog-example)
+* [simple-django-page](https://github.com/90x-Development/simple-django-page)
+* [Simple Django Signals](https://github.com/BaseMax/SimpleDjangoSignals)
+
+
+Further Reading
+---------------
