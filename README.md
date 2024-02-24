@@ -60,7 +60,7 @@ localhost:8000
 ### Specifications 
 
 * [Model Structure](./model_structure.md)
-
+* User password for testings: `xPwVOJ-L0vVY3ERaLKgWOg`
 
 Projects
 ---------------
