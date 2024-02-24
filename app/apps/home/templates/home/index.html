@@ -4,4 +4,12 @@
     <div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolorem error explicabo illum laborum laudantium, nesciunt, nostrum, placeat porro quo recusandae sint! Ex iste libero nobis possimus quasi quisquam soluta.</p>
     </div>
+    {{ spam }}
+    
+    <ol>
+        {% for item in spam %}
+            <li>Egg: {{ item }}</li>
+        {% endfor %}
+    </ol>
+    <br>
 </div>
