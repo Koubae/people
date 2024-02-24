@@ -32,15 +32,38 @@
 <body>
     <div id="root">
 
-        <header>
-            {% block header %}{% endblock header %}
-        </header>
+        {% block header %}
+            <header>
 
-        <nav>
-            {% block nav %}{% endblock nav %}
-        </nav>
+            </header>
+        {% endblock header %}
 
-        <main>
+        {% block nav %}
+            <nav class="navbar">
+                <div class="navbar-items-block navbar-left">
+                    <a class="brand logo nav-link" href="/">People!</a>
+                    <label for="search" class="nav-link"><input type="text" name="search" id="search" placeholder="Search..."></label>
+                </div>
+
+                <div class="navbar-items-block navbar-center">
+                    <a class="nav-link" href="/" >Home</a>
+                    <a class="nav-link" href="#" >Video</a>
+                    <a class="nav-link" href="#" >MarketPlace</a>
+                    <a class="nav-link" href="#" >Groups</a>
+                    <a class="nav-link" href="#" >Gaming</a>
+                </div>
+
+                <div class="navbar-items-block navbar-right">
+                    <a class="nav-link" href="#" >Menu</a>
+                    <a class="nav-link" href="#" >Messanger</a>
+                    <a class="nav-link" href="#" >Notification</a>
+                    <a class="nav-link" href="#" >Account</a>
+                </div>
+
+            </nav>
+        {% endblock nav %}
+
+        <main id="main">
             {% block sidebar_left %}
                 <aside id="sideBarLeft">
                     <div>
@@ -62,7 +85,9 @@
         </main>
 
         <footer id="footer">
-            <p>&copy; Copyright <span id="__JSCopyrightYear"></span></p>
+            <div>
+                <p>&copy; Copyright <span id="__JSCopyrightYear"></span></p>
+            </div>
         </footer>
 
     </div>
