@@ -79,5 +79,26 @@ _Here a list of some example I found in github and online_
 * [Simple Django Signals](https://github.com/BaseMax/SimpleDjangoSignals)
 
 
+Troubleshooting
+---------------
+
+To keep things more organize, rather than have the application in root of the repository, I moved it inside [app](./app) folder.
+PyCharm by default starts and expect Django application to be developed at root level, so in order to make it work see the below article
+
+In general simply do
+
+1. Go to Settings --> Languages & Frameworks --> Django --> 
+2. Modify `Django Project Root` and make it pointing to `app` 
+
+Additionally you may want to change Run configuration of PyCharm, set `Working Directory` also to `app` folder
+
+
+* [Getting Pycharm to run Django tests after moving the entire django source to a subfolder](https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000622670-Getting-Pycharm-to-run-Django-tests-after-moving-the-entire-django-source-to-a-subfolder)
+
+
+
 Further Reading
 ---------------
+
+* [Organize django apps inside](https://stackoverflow.com/questions/73354083/organize-django-apps-inside)
+* [When to create a new app (with startapp) in Django?](https://stackoverflow.com/questions/64237/when-to-create-a-new-app-with-startapp-in-django)
