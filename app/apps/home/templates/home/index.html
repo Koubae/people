@@ -1,3 +1,8 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
 <div>
     <h1>Home</h1>
 
@@ -5,7 +10,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolorem error explicabo illum laborum laudantium, nesciunt, nostrum, placeat porro quo recusandae sint! Ex iste libero nobis possimus quasi quisquam soluta.</p>
     </div>
     {{ spam }}
-    
+
     <ol>
         {% for item in spam %}
             <li>Egg: {{ item }}</li>
@@ -13,3 +18,5 @@
     </ol>
     <br>
 </div>
+
+{% endblock content %}
