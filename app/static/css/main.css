@@ -1,8 +1,9 @@
 @import "normalize.css";
 @import "base.css";
+@import "theme.css";
 
 body {
-    background: #f0f2f5;
+    background: var(--background-color);
 }
 
 #main {
@@ -23,7 +24,6 @@ body {
 
 .navbar {
     background-color: white;
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -40,6 +40,7 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .nav-link {
@@ -63,3 +64,32 @@ body {
     justify-content: flex-end;
 }
 
+.icon-primary {
+    color: var(--primary-icon);
+}
+
+.icon {
+    color: var(--secondary-icon);
+}
+
+.round-padding {
+    background: var(--background-color);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.icon-active {
+    color: var(--primary-button-background);
+}
+
+.brand {
+    width: 20%;
+}
+
+.search-bar {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
