@@ -77,6 +77,7 @@ _Here a list of some example I found in github and online_
 * [django-blog-example](https://github.com/rgab1508/django-blog-example)
 * [simple-django-page](https://github.com/90x-Development/simple-django-page)
 * [Simple Django Signals](https://github.com/BaseMax/SimpleDjangoSignals)
+* [django-tutorial-step-by-step](https://github.com/consideratecode/django-tutorial-step-by-step)
 
 
 Troubleshooting
@@ -95,6 +96,10 @@ Additionally you may want to change Run configuration of PyCharm, set `Working D
 
 * [Getting Pycharm to run Django tests after moving the entire django source to a subfolder](https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000622670-Getting-Pycharm-to-run-Django-tests-after-moving-the-entire-django-source-to-a-subfolder)
 
+
+### PyCharm complaining about 'templates' folder
+
+* [PyCharm code inspection complains template file not found, how to fix?](https://stackoverflow.com/questions/20873625/pycharm-code-inspection-complains-template-file-not-found-how-to-fix)
 
 
 Further Reading
