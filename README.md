@@ -57,6 +57,11 @@ localhost:8000
 * Django Template _intentionally avoiding using any 'big' javascript framework in order to use Django Templating system_
 * MySQL 8
 
+### Specifications 
+
+* [Model Structure](./model_structure.md)
+
+
 Projects
 ---------------
 
