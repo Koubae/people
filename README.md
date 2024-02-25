@@ -25,6 +25,8 @@ env/Scripts/activate.bat
 
 # Install 
 python -m pip install requirements.txt
+# (Optional) Install development dependencies
+python -m pip install dev_requirements.txt
 # Go Inside MySQL
 mysql -u<user> -p<password
 # create database 'people'
@@ -112,3 +114,4 @@ Further Reading
 
 * [Organize django apps inside](https://stackoverflow.com/questions/73354083/organize-django-apps-inside)
 * [When to create a new app (with startapp) in Django?](https://stackoverflow.com/questions/64237/when-to-create-a-new-app-with-startapp-in-django)
+* [How to execute external script in the Django environment](https://stackoverflow.com/questions/41825037/how-to-execute-external-script-in-the-django-environment)
