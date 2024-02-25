@@ -1,4 +1,11 @@
 # -----------------------
+# Apps
+# -----------------------
+# Creating apps in a suborder called 'apps'
+mkdir apps/<app_name>
+python manage.py startapp <app_name> ./apps/<app_name>
+
+# -----------------------
 # Database
 # -----------------------
 python manage.py makemigrations

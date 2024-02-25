@@ -119,3 +119,4 @@ Further Reading
 * [When to create a new app (with startapp) in Django?](https://stackoverflow.com/questions/64237/when-to-create-a-new-app-with-startapp-in-django)
 * [How to execute external script in the Django environment](https://stackoverflow.com/questions/41825037/how-to-execute-external-script-in-the-django-environment)
 * [How to define default data for Django Models?](https://stackoverflow.com/questions/39739439/how-to-define-default-data-for-django-models/39742847#39742847)
+* [Django - Working with many-to-many intermediary models](https://docs.djangoproject.com/en/5.0/ref/contrib/admin/#working-with-many-to-many-intermediary-models)
