@@ -36,13 +36,16 @@
     <div id="root">
 
         {% block header %}
-            <header>
-
-            </header>
+            {% if user.is_authenticated %}
+                <header>
+    
+                </header>
+            {% endif %}
         {% endblock header %}
 
         {% block nav %}
-            <nav class="navbar">
+            {% if user.is_authenticated %}
+                <nav class="navbar">
                 <div class="navbar-items-block navbar-left">
                     <a class="brand logo nav-link" href="/">People!</a>
                     <label for="search" class="nav-link search-bar">
@@ -104,17 +107,20 @@
                 </div>
 
             </nav>
+            {% endif %}
         {% endblock nav %}
 
         <main id="main">
             {% block sidebar_left %}
-                <aside id="sideBarLeft">
-                    <div>
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                        </ul>
-                    </div>
-                </aside>
+                {% if user.is_authenticated %}
+                    <aside id="sideBarLeft">
+                        <div>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                {% endif %}
             {% endblock sidebar_left %}
 
             <section id="content">
@@ -122,14 +128,16 @@
             </section>
 
             {% block sidebar_right %}
-                <aside id="sideBarRight"></aside>
+                {% if user.is_authenticated %}
+                    <aside id="sideBarRight"></aside>
+                {% endif %}
             {% endblock sidebar_right %}
 
         </main>
 
         <footer id="footer">
             <div>
-                <p>&copy; Copyright <span id="__JSCopyrightYear"></span></p>
+                <p>&copy; Copyright <span id="__JSCopyrightYear"></span> - <i>Federico Bau</i></p>
             </div>
         </footer>
 
