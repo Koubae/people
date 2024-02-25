@@ -120,3 +120,4 @@ Further Reading
 * [How to execute external script in the Django environment](https://stackoverflow.com/questions/41825037/how-to-execute-external-script-in-the-django-environment)
 * [How to define default data for Django Models?](https://stackoverflow.com/questions/39739439/how-to-define-default-data-for-django-models/39742847#39742847)
 * [Django - Working with many-to-many intermediary models](https://docs.djangoproject.com/en/5.0/ref/contrib/admin/#working-with-many-to-many-intermediary-models)
+* [Ordering admin.ModelAdmin objects in Django Admin](https://stackoverflow.com/questions/398163/ordering-admin-modeladmin-objects-in-django-admin)
