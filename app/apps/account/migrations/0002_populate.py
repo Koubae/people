@@ -65,7 +65,6 @@ def populate(apps, schema_editor):
 class Migration(migrations.Migration):
 	dependencies = [
 		('account', '0001_initial'),
-		('address', '0003_populate_city'),
 	]
 
 	operations = [

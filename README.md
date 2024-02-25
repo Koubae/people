@@ -8,7 +8,8 @@ _Django Social Media App - Social Networking called "People", built to learn the
 
 Is a simple, non production ready, Social Media Web Application use for learning and meant to be used as an example. 
 
-### Quick Start
+Quick Start
+-----------
 
 * Make sure you have Python3.12 installed else please install via --> https://www.python.org/downloads/
 * Install MySQL, preferably `MySQL 8`, should work in lower version but I developed using version 8 so can't guarantee it works for older ones.
@@ -52,7 +53,18 @@ python manage.py runserver
 localhost:8000
 ```
 
-### Stack
+### Login
+
+Now use can use the demo user to login
+
+* **Email:** `awesome.guy@demo.com`
+* **Password:** `awesome`
+* **Username:** `peoplePerson`
+* **First Name:** `Guy`
+* **Last Name:** `Awesome`
+
+
+#### Stack
 
 * Python3.12
 * Django 5
