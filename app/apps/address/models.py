@@ -77,7 +77,7 @@ class City(BaseModel):
 		]
 
 	def __str__(self):
-		return self.name.capitalize()
+		return self.name.title()
 
 
 class Address(BaseModel):
