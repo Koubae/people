@@ -16,3 +16,10 @@ class LowerCaseCharField(models.CharField):
 	def get_prep_value(self, value: str | None) -> str | None:
 		value = super().get_prep_value(value)
 		return value if value is None else value.lower()
+
+
+class UpperCaseCharField(models.CharField):
+	"""Ensure that string is always uppercase"""
+	def get_prep_value(self, value: str | None) -> str | None:
+		value = super().get_prep_value(value)
+		return value if value is None else value.upper()

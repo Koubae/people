@@ -2,7 +2,7 @@ from django.db import models
 from django.db.models import functions
 from django.utils.translation import gettext_lazy as _
 
-from apps.base.models import BaseModel, LowerCaseCharField
+from apps.base.models import BaseModel, LowerCaseCharField, UpperCaseCharField
 
 
 class Continent(BaseModel):
@@ -47,9 +47,9 @@ class SubRegion(BaseModel):
 
 class Country(BaseModel):
 	name = LowerCaseCharField(_("name"), max_length=100, primary_key=True)
-	iso_alpha2 = LowerCaseCharField(_("iso_alpha2"), max_length=2, unique=True)
-	iso_alpha3 = LowerCaseCharField(_("iso_alpha3"), max_length=3, unique=True)
-	iso_3116_2 = LowerCaseCharField(_("iso_3116_2"), max_length=20, unique=True)
+	iso_alpha2 = UpperCaseCharField(_("iso_alpha2"), max_length=2, unique=True)
+	iso_alpha3 = UpperCaseCharField(_("iso_alpha3"), max_length=3, unique=True)
+	iso_3116_2 = UpperCaseCharField(_("iso_3116_2"), max_length=20, unique=True)
 	code = models.PositiveSmallIntegerField(_("code"), unique=True)
 	continent = models.ForeignKey(SubRegion, on_delete=models.CASCADE, blank=False)
 
