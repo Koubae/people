@@ -37,8 +37,13 @@ drop table address_subregion;
 drop table address_continent;
 delete from django_migrations where app = 'address';
 
+
 python manage.py makemigrations address
 python manage.py migrate   address 0001_initial
 
 python manage.py sqlmigrate address 0002_populate
 python manage.py migrate address 0002_populate
+
+python manage.py migrate account 0002_populate
+
+delete from django_migrations where app = 'account' ;
