@@ -72,6 +72,9 @@ Projects
 * [Datta Able Django](https://github.com/app-generator/django-datta-able)
 * [Django Material Dashboard](https://github.com/app-generator/django-material-dashboard)
 
+* [django-cities](https://github.com/coderholic/django-cities)
+* [django-smart-selects](https://github.com/jazzband/django-smart-selects)
+
 
 ### Other Django Examples
 
@@ -115,3 +118,4 @@ Further Reading
 * [Organize django apps inside](https://stackoverflow.com/questions/73354083/organize-django-apps-inside)
 * [When to create a new app (with startapp) in Django?](https://stackoverflow.com/questions/64237/when-to-create-a-new-app-with-startapp-in-django)
 * [How to execute external script in the Django environment](https://stackoverflow.com/questions/41825037/how-to-execute-external-script-in-the-django-environment)
+* [How to define default data for Django Models?](https://stackoverflow.com/questions/39739439/how-to-define-default-data-for-django-models/39742847#39742847)
