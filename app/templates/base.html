@@ -104,6 +104,10 @@
                     <a class="nav-link" aria-label="Account" href="/account">
                         <svg aria-label="Your profile" class="x3ajldb" data-visualcompletion="ignore-dynamic" role="img" style="height: 40px; width: 40px;"><mask id=":rn:"><circle cx="20" cy="20" fill="white" r="20"></circle><circle cx="34" cy="34" data-visualcompletion="ignore" fill="black" r="8"></circle></mask><g mask="url(#:rn:)"><image x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice" width="100%"  style="height: 40px; width: 40px;"></image><circle class="xbh8q5q x1pwv2dq xvlca1e" cx="20" cy="20" r="20"></circle></g></svg>
                     </a>
+                    <form action="{% url 'logout' %}" method="POST">
+                        {% csrf_token %}
+                        <button type="submit" value="logout" >Log In</button>
+                    </form>
                 </div>
 
             </nav>
