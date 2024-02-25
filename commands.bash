@@ -16,6 +16,11 @@ python manage.py migrate
 # Manually delete migrations
 delete from django_migrations where app = 'account';
 
+python manage.py sqlmigrate   <app_name>
+python manage.py makemigrations --empty <app_name>
+
+python manage.py migrate  --fake address 0002_populate
+
 # -----------------------
 # Testings
 # -----------------------
@@ -23,3 +28,17 @@ delete from django_migrations where app = 'account';
 python manage.py test --keepdb
 # Not ask to destroy/reuse database
 python manage.py test --noinput
+
+
+drop table address_address;
+drop table address_city;
+drop table address_country;
+drop table address_subregion;
+drop table address_continent;
+delete from django_migrations where app = 'address';
+
+python manage.py makemigrations address
+python manage.py migrate   address 0001_initial
+
+python manage.py sqlmigrate address 0002_populate
+python manage.py migrate address 0002_populate

@@ -11,6 +11,7 @@ class Continent(BaseModel):
 
 	class Meta:
 		verbose_name_plural = "1. Continents"
+		ordering = ['name']
 
 	def __str__(self):
 		return self.name.capitalize()
@@ -21,11 +22,12 @@ class SubRegion(BaseModel):
 	code = models.PositiveSmallIntegerField(_("code"))
 	continent = models.ForeignKey(Continent, on_delete=models.CASCADE, blank=False)
 
-	intermediate_region = LowerCaseCharField(_("intermediate region"), max_length=50)
-	intermediate_region_code = models.PositiveSmallIntegerField(_("intermediate region code"))
+	intermediate_region = LowerCaseCharField(_("intermediate region"), max_length=50, blank=True)
+	intermediate_region_code = models.PositiveSmallIntegerField(_("intermediate region code"), blank=True, null=True)
 
 	class Meta:
 		verbose_name_plural = "2. Continents - Regions"
+		ordering = ['name']
 		constraints = [
 			models.UniqueConstraint(
 				functions.Lower('name'),
@@ -47,12 +49,13 @@ class Country(BaseModel):
 	name = LowerCaseCharField(_("name"), max_length=100, primary_key=True)
 	iso_alpha2 = LowerCaseCharField(_("iso_alpha2"), max_length=2, unique=True)
 	iso_alpha3 = LowerCaseCharField(_("iso_alpha3"), max_length=3, unique=True)
-	iso_3116_2 = LowerCaseCharField(_("iso_3116_2"), max_length=6, unique=True)
+	iso_3116_2 = LowerCaseCharField(_("iso_3116_2"), max_length=20, unique=True)
 	code = models.PositiveSmallIntegerField(_("code"), unique=True)
 	continent = models.ForeignKey(SubRegion, on_delete=models.CASCADE, blank=False)
 
 	class Meta:
 		verbose_name_plural = "3. Countries"
+		ordering = ['name']
 
 	def __str__(self):
 		return self.name.capitalize()
@@ -64,6 +67,7 @@ class City(BaseModel):
 
 	class Meta:
 		verbose_name_plural = "4. Cities"
+		ordering = ['name']
 		constraints = [
 			models.UniqueConstraint(
 				functions.Lower('name'),
