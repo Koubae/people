@@ -2,7 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils.translation import gettext_lazy as _
 
-from people.models import BaseModel
+from apps.base.models import BaseModel
+from apps.address.models import Address
 
 
 class Account(BaseModel):
@@ -11,18 +12,10 @@ class Account(BaseModel):
 		on_delete=models.CASCADE,
 		primary_key=True,
 	)
-	# we should add relation with auth
-	# Add About
-	# work and education
-
-	# country
-	# city
-	# address
-	# phone
-	# birthday
-	# job
-
-	# TODO: Add validation to check if user has email , username and so on.
+	address = models.ForeignKey(Address, on_delete=models.CASCADE, related_name="accounts")
+	phone = models.CharField(_('Phone'), max_length=125)
+	birthday = models.DateField(_("Birthday"), null=True, blank=True)
+	job = models.CharField(_("Job"), max_length=255, blank=True)
 
 	def __str__(self) -> str:
 		return self.fullname
