@@ -17,6 +17,9 @@ class Account(BaseModel):
 	birthday = models.DateField(_("Birthday"), null=True, blank=True)
 	job = models.CharField(_("Job"), max_length=255, blank=True)
 
+	# TODO * Add 'gender' enum in account male|female|prefer not say
+	# Todo: add 'bio' is a text ;)
+
 	def __str__(self) -> str:
 		return self.fullname
 

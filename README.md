@@ -135,3 +135,37 @@ Further Reading
 * [Ordering admin.ModelAdmin objects in Django Admin](https://stackoverflow.com/questions/398163/ordering-admin-modeladmin-objects-in-django-admin)
 * [how to have "city" fields depending on "country" field in Django models, without creating their tables](https://stackoverflow.com/questions/39806588/how-to-have-city-fields-depending-on-country-field-in-django-models-without)
 * https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv
+
+#### Social Media Related stuff
+
+* [What is Facebook's architecture?](https://www.quora.com/What-is-Facebooks-architecture-6)
+* [Facebook shares some secrets on making MySQL scale](https://ahmadrais.blogspot.com/2011/12/facebook-shares-some-secrets-on-making.html)
+* [Database normalization](https://en.wikipedia.org/wiki/Database_normalization)
+* [Falsehoods Programmers Believe About Names](https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/)
+
+* [Design a friends table for a social networking site](https://stackoverflow.com/questions/36998526/design-a-friends-table-for-a-social-networking-site)
+* [MySQL Structure for a social network](https://stackoverflow.com/questions/9930940/mysql-structure-for-a-social-network)
+* [Database schema for a social network website? MySql?](https://stackoverflow.com/questions/66652245/database-schema-for-a-social-network-website-mysql)
+* [Social web application database design: how can I improve this schema?](https://stackoverflow.com/questions/3844477/social-web-application-database-design-how-can-i-improve-this-schema)
+* [Table structure for social media content](https://stackoverflow.com/questions/36648479/table-structure-for-social-media-content)
+* [Guide To Design Database For Social Network System In MySQL](https://mysql.tutorials24x7.com/blog/guide-to-design-database-for-social-network-system-in-mysql)
+* [MySQL Social Network Database](https://github.com/j84guo/mysql-social-network)
+* [Analyzing Social Media Data with SQL](https://learnsql.com/blog/sql-social-media-analysis/)
+* [Going against the grain — Why we chose MySQL for building Social Graph](https://medium.com/gameskraft-engineering/why-we-chose-mysql-for-social-graph-service-332bc40ffcc9)
+* [SQL database for a social network](https://codereview.stackexchange.com/questions/153710/sql-database-for-a-social-network)
+* [Database 101: How social media “likes” are stored in a database](https://dev.to/danielhe4rt/database-101-how-social-media-likes-are-stored-in-a-database-3oii)
+* [In a MySQL social network database, should likes of posts and comments be in the same or separate tables?](https://www.quora.com/In-a-MySQL-social-network-database-should-likes-of-posts-and-comments-be-in-the-same-or-separate-tables)
+* [Database Design for Facebook: A Social Network Database Example](https://www.youtube.com/watch?v=sougyTO_Wjw)
+* ['schema' design for a social network](https://stackoverflow.com/questions/2839725/schema-design-for-a-social-network?rq=4)
+* [social networking website database management](https://stackoverflow.com/questions/3013103/social-networking-website-database-management?rq=4)
+* [Database scheme design social networking sites](https://stackoverflow.com/questions/2489739/database-scheme-design-social-networking-sites?rq=4)
+* [How to model database tables for implementing Friend relationship? [closed]](https://stackoverflow.com/questions/379236/how-to-model-database-tables-for-implementing-friend-relationship)
+* [How to store bidirectional relationships in a RDBMS like MySQL?](https://stackoverflow.com/questions/10807900/how-to-store-bidirectional-relationships-in-a-rdbms-like-mysql)
+* [What is the best way to implement Polymorphic Association in SQL Server?](https://stackoverflow.com/questions/7000283/what-is-the-best-way-to-implement-polymorphic-association-in-sql-server)
+
+* FOAF (FOAF Friend of a Friend)-format. <-- What is it? | ref : https://stackoverflow.com/a/379301/13903942
+  * http://www.foaf-project.org
+  * https://en.wikipedia.org/wiki/FOAF
+  * https://www.amazon.com/dp/0123735564
+
+* What is **Boyce-Codd Normal Form (BCNF)** --> https://github.com/j84guo/mysql-social-network/tree/master?tab=readme-ov-file#mysql-schema

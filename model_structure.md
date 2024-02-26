@@ -21,6 +21,45 @@
 * (one-to-many) media_like_account: media image|video <-- account,like
 * (one-to-one) account_setting: account <-> setting (maybe a json object???)
 
+
+### Connection
+
+I connection is a Many-to-Many relationship to any `connectable entities`.
+A `connectable entity` could be:
+
+* account 
+* group
+* event
+
+Now, this means that we could potentially have connections between different entities types (or same) and each would have a _different meaning_.
+These are the possible combinations (no a definitive list);
+
+* (friend) account <-> account (friend)
+* (member) account <-> group (members)
+* (participant) account <-> event (participants)
+* (party) group <-> event (parties)
+
+#### Connection status
+
+
+
+###### Possible solutions / Schemas
+
+```txt
+# https://stackoverflow.com/a/31351505/13903942
+USER_RELATIONSHIP {
+    user_first_id,
+    user_second_id,
+    type
+
+    primary key(user_first_id, user_second_id)
+}
+
+```
+
+
+
+
 ##### Likes - Comments
 
 * (one-to-many) post_like_account: post <-- account,like
