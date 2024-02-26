@@ -9,5 +9,4 @@ class Index(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["spam"] = [f"egg_{i}" for i in range(10)]
         return context
