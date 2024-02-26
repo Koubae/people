@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'apps.base.apps.BaseConfig',
     'apps.address.apps.AddressConfig',
     'apps.home.apps.HomeConfig',
-    'apps.account.apps.AccountConfig'
+    'apps.account.apps.AccountConfig',
+    'apps.social_media.apps.SocialMediaConfig'
 ]
 
 MIDDLEWARE = [
