@@ -47,3 +47,6 @@ python manage.py migrate address 0002_populate
 python manage.py migrate account 0002_populate
 
 delete from django_migrations where app = 'account' ;
+
+select COLUMN_NAME, CONSTRAINT_NAME, REFERENCED_COLUMN_NAME, REFERENCED_TABLE_NAME from information_schema.KEY_COLUMN_USAGE where TABLE_NAME = 'link_account';
+select COLUMN_NAME, CONSTRAINT_NAME, REFERENCED_COLUMN_NAME, REFERENCED_TABLE_NAME from information_schema.KEY_COLUMN_USAGE where TABLE_NAME = 'social_media_link_account';
