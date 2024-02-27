@@ -89,6 +89,7 @@ DATABASES = {
 		"HOST": "localhost",
 		"TEST": {
 			"NAME": "people_test",
+            "MIGRATE": False
 		},
 	}
 }

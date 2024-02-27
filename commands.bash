@@ -29,6 +29,13 @@ python manage.py test --keepdb
 # Not ask to destroy/reuse database
 python manage.py test --noinput
 
+python manage.py test app_name
+python manage.py test animals.tests.AnimalTestCase
+python manage.py test app_name.tests.AnimalTestCase.test_animals_can_speak
+
+# -----------------------
+# Misc and other stuff for memo
+# -----------------------
 
 drop table address_address;
 drop table address_city;
